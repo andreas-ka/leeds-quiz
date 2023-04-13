@@ -8,3 +8,55 @@
  padding: 0;
  border: none;
 }
+
+html { 
+    background: url("/assets/images/background-image.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+#logo-text {
+    width: 500px;
+    height: 150px;
+    margin: 50px;
+    outline: solid 1px black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+#nav-buttons {
+    width: 500px;
+    height: 50px;
+    margin: 50px;
+    outline: solid 1px black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#game-area {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    outline: solid 1px black;
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+}
+
+#questions {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 50px;
+    outline: solid 1px black;
+}
+
+#answer-button-area {
+    flex-direction: column;
+    justify-content: center;
+}
+
