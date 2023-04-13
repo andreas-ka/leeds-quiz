@@ -17,11 +17,12 @@ html {
     background-size: cover;
   }
 
+/* header styling and image styling */
+
 #logo-text {
     width: 500px;
     height: 150px;
     margin: 50px;
-    outline: solid 1px black;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -30,19 +31,22 @@ html {
  /* Navbar and button styling */ 
 
 #button-rules {
-    outline: solid 1px black;
     width: 140px;
     height: 40px;
     margin: auto;
     border-radius: 15px;
+    color: #172b49;
+    background-color: #ffe003;
 }
 
 #button-leaderboard {
-    outline: solid 1px black;
+    outline: solid 2px #172b49;
     width: 140px;
     height: 40px;
     margin: auto;
     border-radius: 15px;
+    color: #172b49;
+    background-color: #ffe003;
 }
 
 #nav-buttons {
@@ -69,6 +73,7 @@ html {
     flex-direction: column;
     padding-top: 10px;
     border-radius: 30px;
+    background-color: #172b49;
 }
 
 #questions {
@@ -79,6 +84,7 @@ html {
     height: 150px;
     outline: solid 1px black;
     justify-content: center;
+    color: white;
 }
 
 #answer-button-area {
@@ -119,12 +125,30 @@ html {
     height: 50px;
     outline: solid 1px black;
     margin-left: 20px;
+    color: white
 }
 
 #questions-left-counter {
     width: 10%;
     height: 50px;
     outline: solid 1px black;
+    color: #ffe003;
+}
+
+#correct-answers {
+    width: 30%;
+    height: 50px;
+    outline: solid 1px black;
+    margin-left: 20%;
+    color: white
+    ;
+}
+
+#correct-answers-counter {
+    width: 10%;
+    height: 50px;
+    outline: solid 1px black;
+    color: #ffe003;
 }
 
 /* footer styling */
