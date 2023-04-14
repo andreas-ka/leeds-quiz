@@ -1,57 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="A quiz about Leeds United Football Club">
-   <meta name="keywords" content="Leeds United, Football, Quiz">
-   <link rel="stylesheet" href="assets/css/style.css">
-   <title>Leeds United Quiz</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A quiz about Leeds United Football Club"
+    />
+    <meta name="keywords" content="Leeds United, Football, Quiz" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Leeds United Quiz</title>
+  </head>
+  <body>
     <main>
-        <header>
-            <div id="logo-text">
-                <img src="assets/images/leeds-logo-text.png" alt="Leeds United Logo"></div>
-        </header>
-        <div id="game-area">
-            <div id="questions">In what year was Leeds United founded?</div>
-            <div id="timer">
-                <p><i class="fa-solid fa-stopwatch" style="color: #182b49;"></i> 15s</p></div>
-            <div id="answer-button-area">
-                <button type="button" id="button-a" class="answer-button">A</button>
-                <button type="button" id="button-b" class="answer-button">B</button>
-                <button type="button" id="button-c" class="answer-button">C</button>
-                <button type="button" id="button-d" class="answer-button">D</button>
-            </div>
-            <div id="next-question">
-                <button type="button" id="next-question">Next question</button>
-            </div>
-            <div id="score-area">
-            <div id="questions-left">Questions:</div>
-            <div id="questions-left-counter">0 / 5</div>
-            <div id="correct-answers">Correct answers</div>
-            <div id="correct-answers-counter">0</div>
-            </div>
+      <header>
+        <div id="logo-text">
+          <img
+            src="assets/images/leeds-logo-text.png"
+            alt="Leeds United Logo"
+          />
         </div>
+      </header>
+      <!-- Quiz area with question and answer buttons-->
+      <div id="quiz-area">
+        <div id="questions">In what year was Leeds United founded?</div>
+        <div id="timer">
+          <p>
+            <i class="fa-solid fa-stopwatch" style="color: #182b49"></i> 15s
+          </p>
+        </div>
+        <div id="answer-button-area">
+          <button type="button" id="button-a" class="answer-button">A</button>
+          <button type="button" id="button-b" class="answer-button">B</button>
+          <button type="button" id="button-c" class="answer-button">C</button>
+          <button type="button" id="button-d" class="answer-button">D</button>
+        </div>
+        <div id="next-question">
+          <button type="button" id="next-question">Next question</button>
+        </div>
+        <div id="score-area">
+          <div id="questions-left">Questions:</div>
+          <div id="questions-left-counter">0 / 5</div>
+          <div id="correct-answers">Correct answers</div>
+          <div id="correct-answers-counter">0</div>
+        </div>
+      </div>
+      <!-- Rules and welcome code -->
+      <div id="welcome-rules-area">
+        <div id="welcome"><h3>Welcome to a fun quiz about Leeds United</h3></div>
+            <div><h3>Quiz Rules and information:</h3></div>
+            <div id="rules-area">
+                <ul id="rules-list">
+                    <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> This quiz contains 10 questions.</li>
+                    <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Every question has 4 answers but only one is correct.</li>
+                    <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> You cant change answer after you clicked an answer button.</li>
+                    <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> To make it more challenging you have 15 seconds to answer each question.</li>
+                    <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Good luck and enjoy!</li>
+                </ul>
+            </div>
+                <div id="start-quiz">
+                <button type="button" id="start-quiz-btn">Start Quiz</button>
+            </div>
+      </div>
     </main>
     <footer>
-        <div id="footer-wrapper">
-            <p>Visit Leeds United on Social Media:</p>
-            <p id="footer-links">
-                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our facebook page, opens up in new tab"><i class="fa-brands fa-facebook" style="color: #f2d607;"></i></a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our instagram page, opens up in new tab"><i class="fa-brands fa-instagram" style="color: #f2d706;"></i></a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our twitter page, opens up in new tab"><i class="fa-brands fa-twitter" style="color: #f2d607;"></i></a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our youtube page, opens up in new tab"><i class="fa-brands fa-youtube" style="color: #f2d706;"></i></a>
-                </p>
-                    <p id="footer-madeof">Made with <i class="fa-solid fa-heart" style="color: #f2d607;"></i> by Andreas Karlsson 2023
-                    <a href="https://github.com/andreas-ka" target="_blank" rel="noopener" aria-label="Visit my github repository page, opens up in new tab"><i class="fa-brands fa-github" style="color: #f2d706;"></i></a></p>    
-        </div>
+      <div id="footer-wrapper">
+        <p>Visit Leeds United on Social Media:</p>
+        <p id="footer-links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our facebook page, opens up in new tab"
+            ><i class="fa-brands fa-facebook" style="color: #f2d607"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our instagram page, opens up in new tab"
+            ><i class="fa-brands fa-instagram" style="color: #f2d706"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our twitter page, opens up in new tab"
+            ><i class="fa-brands fa-twitter" style="color: #f2d607"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our youtube page, opens up in new tab"
+            ><i class="fa-brands fa-youtube" style="color: #f2d706"></i
+          ></a>
+        </p>
+        <p id="footer-madeof">
+          Made with <i class="fa-solid fa-heart" style="color: #f2d607"></i> by
+          Andreas Karlsson 2023
+          <a
+            href="https://github.com/andreas-ka"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit my github repository page, opens up in new tab"
+            ><i class="fa-brands fa-github" style="color: #f2d706"></i
+          ></a>
+        </p>
+      </div>
     </footer>
     <script src="https://kit.fontawesome.com/bd05bc0350.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
-

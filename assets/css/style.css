@@ -9,6 +9,7 @@
  border: none;
 }
 
+/* Background image for site */
 html { 
     background: url("/assets/images/background-image.webp") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -37,9 +38,16 @@ html {
     transition: 0.3s;
  }
 
+ #start-quiz-btn:hover {
+    color:  #172b49;
+    background-color: #f2d607;
+    outline: solid 2px #172b49;
+    transition: 0.3s;
+ }
+
 /* Game area styling */
 
-#game-area {
+#quiz-area {
     width: 500px;
     height: 600px;
     margin: 50px;
@@ -51,6 +59,7 @@ html {
     border-radius: 30px;
     background-color: #172b49;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: none;
 }
 
 #questions {
@@ -90,6 +99,7 @@ html {
     height: 40px;
     margin: 10px auto;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 #next-question {
@@ -98,6 +108,79 @@ html {
     height: 50px;
     margin: auto;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Welcome and rules styling */
+
+#welcome-rules-area {
+    width: 500px;
+    height: 600px;
+    margin: 50px;
+    display: flex;
+    margin-top: 10px;
+    margin: auto; 
+    flex-direction: column;
+    padding-top: 10px;
+    border-radius: 30px;
+    background-color: #172b49;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#welcome {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100px;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+    
+#start-quiz-btn {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#rules-list {
+    list-style: none;
+    color: #f2d607;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    flex-direction: column;
+}
+
+#rules-list li {
+    margin-bottom: 15px;
+}
+
+#rules-area {
+    height: 300px;
+    font-size: 20px;
+    padding-top: 30px;
+    
+}
+
+#start-quiz {
+    display: flex;
+    margin: 10px auto;
+    width: 20%;
+    height: 25px;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    color: white;
 }
 
 /* score area and question counter */
@@ -138,7 +221,6 @@ html {
 }
 
 /* footer styling */
-
 footer {
     width: 500px;
     height: 200px;
@@ -161,7 +243,6 @@ footer {
     padding-top: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
 
 #footer-links {
     margin: auto;
