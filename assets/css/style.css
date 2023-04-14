@@ -140,21 +140,37 @@ html {
 /* footer styling */
 
 footer {
-    display: flex;
-    padding: 60px 10px 0px 10px;
-    width: 100%;
+    width: 500px;
     height: 200px;
-    margin: auto;
+    margin: 50px;
+    display: flex;
+    margin-top: 10px;
+    margin: auto; 
+    flex-direction: column;
+    padding-top: 10px; 
 }
 
 #footer-wrapper {
     background-color: #172b49;
-    width: 80%;
-    height: 60%;
+    width: 400px;
+    height: 120px;
     margin: auto;
     color: #f2d607;
     border-radius: 30px;
     text-align: center;
     padding-top: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#footer-links {
+    margin: auto;
+    font-size: 24px;
+    letter-spacing: 5px;
+    padding-top: 8px;
+    padding-bottom: 26px;
+}
+
+#footer-madeof i {
+    font-size: 24px;
 }
