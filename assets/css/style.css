@@ -31,14 +31,7 @@ html {
 
  /* button styling */ 
 
- #next-question:hover {
-    color:  #172b49;
-    background-color: #f2d607;
-    outline: solid 2px #172b49;
-    transition: 0.3s;
- }
-
- #start-quiz-btn:hover {
+ .start-next-btn:hover {
     color:  #172b49;
     background-color: #f2d607;
     outline: solid 2px #172b49;
@@ -179,7 +172,7 @@ html {
     padding-top: 30px;
 }
     
-#start-quiz-btn {
+.start-next-btn {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     width: 180px;
     height: 50px;
@@ -255,7 +248,7 @@ h3 {
     padding-top: 30px;
 }
     
-#start-quiz-btn {
+.start-next-btn {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     width: 180px;
     height: 50px;
@@ -271,6 +264,12 @@ h3 {
     text-align: center;
     margin-top: 10px;
     padding-bottom: 90px;
+}
+#restart-quiz {
+    display: flex;
+    margin: 10px auto;
+    height: 325px;
+    justify-content: center;
 }
 
 /* footer styling */
