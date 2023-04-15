@@ -52,7 +52,6 @@ html {
     border-radius: 30px;
     background-color: #172b49;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    display: none;
 }
 
 #questions {
@@ -81,7 +80,7 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#answer-button-area {
+#answer-btn-area {
     display: flex;
     flex-direction: column;
 }
@@ -107,7 +106,7 @@ html {
 
 /* score area and question counter */
 
-#score-area {
+#q-left-answer-correct {
     display: flex;
     flex-direction: row;
 }
@@ -156,6 +155,7 @@ html {
     border-radius: 30px;
     background-color: #172b49;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: none;
 }
 
 #welcome {
