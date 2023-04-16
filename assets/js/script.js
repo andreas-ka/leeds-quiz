@@ -6,6 +6,7 @@ const resultScoreArea = document.getElementById("score-area")
 const timer = document.getElementById("timer");
 const answerBtnArea = document.getElementById("answer-btn-area");
 const questionElement = document.getElementById("questions");
+const startQuizBtn = document.getElementById("start-quiz-btn");
 const nextQuestionBtn = document.getElementById("next-question-btn");
 
 let currentScore = 0;
@@ -13,43 +14,26 @@ let currentQuestionIndex = 0;
 
 
 // start button action
-start-quiz-btn.onclick = ()=> {
-    welcomeRulesArea.style.display = 'none';
-    resultScoreArea.style.display = 'none';
-    questionArea.style.display = 'block';
+startQuizBtn.onclick = ()=> {
+    welcomeRulesArea.style.display = 'none'; // hides the welcome and rules div
+    resultScoreArea.style.display = 'none'; // hides the result div
+    questionArea.style.display = 'block'; // shows the quiz with question and buttons
+    displayQuestions() // calling the function that shows the questions
 }
 
-start-quiz-btn.addEventListener("click", startQuiz)
-
-//
-nextQuestionBtn.onlick = ()=> {
-
-}
-// Display questions 
-function displayQuestions() {
-    resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNumber = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
-
-    currentQuestion.answer.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn-class");
-        answerButton.appendChild(button);
-        console.log(answer)
-    });
+// Next Question button action
+nextQuestionBtn.onclick = ()=> {
+    displayQuestions()
 }
 
-function startQuiz() {
-    currentScore = 0;
-    currentQuestionIndex = 0;
-    displayQuestions();
-}
+function displayQuestions(index) {
+    let questionTag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+    let answerTag = '<div class="option"><span>'+ questions[index].answer.text[0] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].answer.text[1] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].answer.text[2] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].answer.text[3] +'</span></div>';
+    questions.innerHTML = questionTag; //adding new span tag inside que_tag
+    answerBtnArea.innerHTML = answerTag; //adding new div tag inside option_tag
 
-function resetState() {
-    nextQuestionBtn.style.display = "none";
-    while(answerBtnArea.firstChild) {
-        answerBtnArea.removeChild(answerBtnArea.firstChild);
-    }
+    const answer = answerBtnArea.querySelectorAll(".answer");
 }
