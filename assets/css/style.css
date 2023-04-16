@@ -55,7 +55,7 @@ html {
     display: none;
 }
 
-#questions {
+#questions-div {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -95,6 +95,16 @@ html {
     border-radius: 15px;
     cursor: pointer;
 }
+
+.answer-button-alternative {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 280px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 
 #next-question {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
