@@ -27,20 +27,29 @@ nextQuestionBtn.onlick = ()=> {
 }
 // Display questions 
 function displayQuestions() {
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
-    currentQuestion.answers.forEach(answer => {
+    currentQuestion.answer.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answer-btn-area.appendChild(button);
+        button.classList.add("btn-class");
+        answerButton.appendChild(button);
+        console.log(answer)
     });
 }
 
 function startQuiz() {
     currentScore = 0;
     currentQuestionIndex = 0;
+    displayQuestions();
+}
 
+function resetState() {
+    nextQuestionBtn.style.display = "none";
+    while(answerBtnArea.firstChild) {
+        answerBtnArea.removeChild(answerBtnArea.firstChild);
+    }
 }
