@@ -120,14 +120,22 @@ html {
 }
 
 #questions-left-counter {
-    width: 10%;
+    width: 5%;
+    height: 50px;
+    color: #f2d607;
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+#questions-left-p {
+    width: 12%;
     height: 50px;
     color: #f2d607;
     font-size: 20px;
 }
 
 #correct-answers {
-    width: 32%;
+    width: 39%;
     height: 50px;
     margin-left: 32%;
     color: white;
