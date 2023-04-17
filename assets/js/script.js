@@ -14,9 +14,22 @@ let questionCounter = 0;
 let currentQuestion = 0;
 
 
+// start button action
+startQuizBtn.onclick = ()=> {
+    welcomeRulesArea.style.display = 'none';
+    resultScoreArea.style.display = 'none';
+    questionArea.style.display = 'block';
+    showQuestions();
+}
+
+function resetState() {
+    while(answerBtnArea.firstChild) {
+        answerBtnArea.removeChild(answerBtnArea.firstChild)
+    }
+}
+
 function showQuestions(){
-    resetState()
-        
+    resetState()       
     //creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ quiz[0].numb + ". " + quiz[0].question +'</span>';
     let option_tag = 
@@ -26,24 +39,7 @@ function showQuestions(){
     + '<button class="answer-btn"><span>'+ quiz[0].options[3] +'</span></button>';
     questionText.innerHTML = que_tag; //adding new span tag inside question-class
     answerBtnArea.innerHTML = option_tag; // adding new span with option in answer buttons
-    optionBtn.onclick = alert("hello");
-
-     //validation code to see State field is mandatory.  
-    
-    
-}
-
-function resetState() {
-    while(answerBtnArea.firstChild) {
-        answerBtnArea.removeChild(answerBtnArea.firstChild)
-    }
-}
-
-
-// start button action
-startQuizBtn.onclick = ()=> {
-    welcomeRulesArea.style.display = 'none';
-    resultScoreArea.style.display = 'none';
-    questionArea.style.display = 'block';
-    showQuestions();
+    answerBtnArea.onclick = alert("hello"); 
+    let btnPressed = document.querySelector(".answer-btn");
+    btnPressed.addEventListener("click", alert("hello"));
 }
