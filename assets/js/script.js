@@ -21,7 +21,7 @@ startQuizBtn.onclick = ()=> {
     resultScoreArea.style.display = 'none';
     questionArea.style.display = 'block';
     showQuestions(0);
-    questionCounter();
+    questionCounter(questionNumber);
     showScore()
 }
 
@@ -33,13 +33,19 @@ nextQuestionBtn.onclick = ()=> {
         questionCounter(questionNumber)
         showScore()
     }else{
-        //showResult()
+        showResult()
     }
 }
 
-// function showResult(){
-//}
-
+// Takes you to the result page and displays your score
+function showResult(){
+    welcomeRulesArea.style.display = 'none';
+    resultScoreArea.style.display = 'block';
+    questionArea.style.display = 'none';
+    let scoreTotal = document.getElementById("score-div");
+    let scoreTotalTag = '<span>' + userScore + '</span>';
+    scoreTotal.innerHTML = scoreTotalTag;
+}
 
 function showScore(){
     let scoreNum = document.getElementById("correct-answers-counter")

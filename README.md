@@ -14,6 +14,10 @@
     
     -   #### Colour Palette
 
+    #f2d607 yellow
+    #172b49 dark blue
+    #ffffff white
+
        
 
     -   #### Typography
@@ -104,6 +108,10 @@
 
 
 ### ***Credits***
+
+Codeinstitute mentor Sean for helping me sortout an issue with addEventListener.
+
+Codeinstitute mentor Sarah helped me out with classList and how i should do to make it work.
 
 
 Box shadow
