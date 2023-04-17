@@ -31,15 +31,44 @@ function resetState() {
 function showQuestions(){
     resetState()       
     //creating a new span and div tag for question and option and passing the value using array index
-    let que_tag = '<span>'+ quiz[0].numb + ". " + quiz[0].question +'</span>';
+    let que_tag = '<span>'+ quiz[2].numb + ". " + quiz[2].question +'</span>';
     let option_tag = 
-    '<button class="answer-btn"><span>'+ quiz[0].options[0] +'</span></button>'
-    + '<button class="answer-btn"><span>'+ quiz[0].options[1] +'</span></button>'
-    + '<button class="answer-btn"><span>'+ quiz[0].options[2] +'</span></button>'
-    + '<button class="answer-btn"><span>'+ quiz[0].options[3] +'</span></button>';
+    '<button class="answer-btn"><span>'+ quiz[2].options[0] +'</span></button>'
+    + '<button class="answer-btn"><span>'+ quiz[2].options[1] +'</span></button>'
+    + '<button class="answer-btn"><span>'+ quiz[2].options[2] +'</span></button>'
+    + '<button class="answer-btn"><span>'+ quiz[2].options[3] +'</span></button>';
     questionText.innerHTML = que_tag; //adding new span tag inside question-class
     answerBtnArea.innerHTML = option_tag; // adding new span with option in answer buttons
-    answerBtnArea.onclick = alert("hello"); 
-    let btnPressed = document.querySelector(".answer-btn");
-    btnPressed.addEventListener("click", alert("hello"));
+
+    setEventListeners();
 }
+
+function setEventListeners() {
+    [...optionBtn].forEach(option => { // converty nodelist to an array and loop over each option in array
+        option.addEventListener("click", event => { // add an click eventlistener to each option button and emits an event
+            const span = event.currentTarget.querySelector('span'); // Targets the span
+            const text = span.innerText; // gets the innertext to know what was clicked
+            console.log(text);
+            let correctAnswer = [quiz[2].answer];
+            console.log(correctAnswer);
+            if(text == correctAnswer) {
+                console.log('correct answer')
+                userScore += 1;
+                event.target.classList.add("correct") // what i would like to use
+            }else{
+                console.log('incorrect')
+                event.target.classList.add("incorrect")
+            }
+            //checkAnswer() // starts the checkAnswer function
+        })
+    })
+}
+
+/*
+function checkAnswer() {
+    let correctAnswer = [quiz[1].answer];
+    let span = document.querySelector('span'); // Targets the span
+    const text = span.innerText; // gets the innertext to know what was clicked
+    console.log(correctAnswer);
+    console.log(text);
+} */

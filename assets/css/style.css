@@ -94,6 +94,7 @@ html {
     margin: 10px auto;
     border-radius: 15px;
     cursor: pointer;
+    background-color: white;
 }
 
 .answer-btn {
@@ -103,34 +104,24 @@ html {
     margin: 10px auto;
     border-radius: 15px;
     cursor: pointer;
+    background-color: white;
 }
 
 .answer-btn:hover {
-    border: 2px solid white;
-    background-color: #f2d607;
+    border: 3px solid #f2d607;
 }
+    /*background-color: #f2d607;
+}*/
 
 .answer-btn span {
     font-size: 18px;
 }
 
 .correct {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 280px;
-    height: 40px;
-    margin: 10px auto;
-    border-radius: 15px;
-    cursor: pointer;
     background-color: green;
 }
 
 .incorrect {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 280px;
-    height: 40px;
-    margin: 10px auto;
-    border-radius: 15px;
-    cursor: pointer;
     background-color: red;
 }
 
@@ -143,6 +134,7 @@ html {
     border-radius: 15px;
     cursor: pointer;
     font-size: 20px;
+    display: block;
 }
 
 /* score area and question counter */
