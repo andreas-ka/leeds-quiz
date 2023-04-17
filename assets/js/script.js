@@ -9,6 +9,7 @@ const questionText = document.querySelector(".questions-class");
 const answerBtnArea = document.getElementById("answer-btn-area");
 const optionBtn = document.getElementsByClassName("answer-btn")
 const questionsTotal = document.getElementById("questions-left-counter");
+const restartQuizBtn = document.getElementById("restart-quiz-btn")
 
 
 let questionNumber = 1;
@@ -35,6 +36,16 @@ nextQuestionBtn.onclick = ()=> {
     }else{
         showResult()
     }
+}
+// restart quiz button at the end of the quiz
+restartQuizBtn.onclick = ()=> {
+    resetState()
+    welcomeRulesArea.style.display = 'none';
+    resultScoreArea.style.display = 'none';
+    questionArea.style.display = 'block';
+    showQuestions(0);
+    questionCounter(questionNumber);
+    showScore()
 }
 
 // Takes you to the result page and displays your score
@@ -94,15 +105,15 @@ function setEventListeners() {
             if(text == correctAnswer) {
                 console.log('correct answer')
                 userScore ++;
-                event.target.classList.add("correct") // what i would like to use
+                event.target.classList.add("correct") // sets the class correct to the right answer and it shows green
             }else{
                 console.log('incorrect')
-                event.target.classList.add("incorrect")
+                event.target.classList.add("incorrect") // sets the class incorrect to the wrong answer
             }
             for(i=0; i < allOptions; i++){
                 answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
             }
-            nextQuestionBtn.style.display = "block";
+            nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after answer made.
         })
     })
 }
