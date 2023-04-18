@@ -16,32 +16,6 @@ let questionNumber = 1;
 let userScore = 0;
 
 
-// This attempt didnt work
-
-/*function startTimer(time){
-    counter = setInterval(timer, 1000);
-    function timer(){
-        document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs";
-        seconds--;
-        if (seconds < 0) {
-        clearInterval(counter);
-        document.getElementById('timer').innerHTML = "Time is out"; 
-        }
-}
-}*/
-
-// This display the timer and countdown but once stopped when i press a button it wont start again
-// Tried wrapping it in one more function and call it when next question pressed but that messed up the whole code.
-    var count = 15;
-    var interval = setInterval(function(){
-    document.getElementById('timer').innerHTML= "Time left: " + count;
-    count--;
-    if (count === 0){
-    clearInterval(interval);
-    document.getElementById('timer').innerHTML='Times up ';
-  }
-}, 1000);
-
 // start button action
 startQuizBtn.onclick = ()=> {
     welcomeRulesArea.style.display = 'none';
@@ -50,6 +24,7 @@ startQuizBtn.onclick = ()=> {
     showQuestions(0);
     questionCounter(questionNumber);
     showScore()
+    startTimer(15)
     
 }
 // Next question button
@@ -59,7 +34,8 @@ nextQuestionBtn.onclick = ()=> {
         showQuestions(questionNumber)
         questionCounter(questionNumber)
         showScore()
-        count = 15;
+        clearInterval(counter);
+        startTimer(15)
     }else{
         showResult()
     }
@@ -73,7 +49,27 @@ restartQuizBtn.onclick = ()=> {
     questionNumber = 1;
     questionCounter(questionNumber);
     showQuestions(0);
+    startTimer(15)
 }
+
+
+let counter;
+let seconds;
+let elapsedTime = 0;
+
+function startTimer(time) {
+    seconds = time - elapsedTime;
+    counter = setInterval(timer, 1000);
+    function timer() {
+        document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs";
+        seconds--;
+        if (seconds < 0) {
+            clearInterval(counter);
+            document.getElementById('timer').innerHTML = "Time is out";
+        }
+    }
+}
+
 // Takes you to the result page and displays your score
 function showResult() {
     welcomeRulesArea.style.display = 'none';
@@ -136,11 +132,11 @@ function setEventListeners() {
                 console.log('correct answer')
                 userScore ++;
                 event.target.classList.add("correct"); // sets the class correct to the right answer and it shows green
-                clearInterval(interval);
+                clearInterval(counter)
             }else{
                 console.log('incorrect')
                 event.target.classList.add("incorrect"); // sets the class incorrect to the wrong answer
-                clearInterval(interval);
+                clearInterval(counter)
             }
             for(i=0; i < allOptions; i++){
                 answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
