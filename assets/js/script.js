@@ -1,5 +1,4 @@
 // Get elements by id
-
 const welcomeRulesArea = document.getElementById("welcome-rules-area");
 const questionArea = document.getElementById("quiz-area");
 const resultScoreArea = document.getElementById("score-area");
@@ -11,7 +10,7 @@ const optionBtn = document.getElementsByClassName("answer-btn")
 const questionsTotal = document.getElementById("questions-left-counter");
 const restartQuizBtn = document.getElementById("restart-quiz-btn")
 
-
+// variables that change during the quiz
 let questionNumber = 1;
 let userScore = 0;
 
@@ -52,7 +51,6 @@ restartQuizBtn.onclick = ()=> {
     startTimer(15)
 }
 
-
 // Sets the timer to 15 seconds on each question
 let counter;
 let seconds;
@@ -72,7 +70,7 @@ function startTimer(time) {
             for(i=0; i < allOptions; i++){
                 if(answerBtnArea.children[i].textContent == correctAnswer){
                     answerBtnArea.children[i].classList.add("correct")
-                answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
+                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
             }
             nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after time is out.
         }
@@ -147,10 +145,13 @@ function setEventListeners() {
                 console.log('incorrect')
                 event.target.classList.add("incorrect"); // sets the class incorrect to the wrong answer
                 clearInterval(counter)
+                for(i=0; i < allOptions; i++){
+                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
+                }
             }
-            for(i=0; i < allOptions; i++){
+            /*for(i=0; i < allOptions; i++){
                 answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
-            }
+            }*/
             nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after answer made.
         })
     })

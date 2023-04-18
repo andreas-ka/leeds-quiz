@@ -19,7 +19,6 @@ html {
   }
 
 /* header styling and image styling */
-
 #logo-text {
     width: 500px;
     height: 150px;
@@ -27,10 +26,24 @@ html {
     display: flex;
     justify-content: center;
     margin: auto;
+    flex-direction: row;
   }
+.logo-text {
+    width: 166px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-text-center {
+    width: 166px;
+    height: 50px;
+    text-align: center;
+}
 
  /* button styling */ 
-
  .start-next-btn:hover {
     color:  #172b49;
     background-color: #f2d607;
@@ -46,7 +59,6 @@ html {
  }
 
 /* Game area styling */
-
 #quiz-area {
     width: 500px;
     height: 600px;
@@ -148,7 +160,6 @@ html {
 }
 
 /* score area and question counter */
-
 #q-left-answer-correct {
     display: flex;
     flex-direction: row;
@@ -198,7 +209,6 @@ html {
 }
 
 /* Welcome and rules styling */
-
 #welcome-rules-area {
     width: 500px;
     height: 600px;
@@ -254,8 +264,7 @@ html {
 #rules-area {
     height: 300px;
     font-size: 20px;
-    padding-top: 30px;
-    
+    padding-top: 30px;  
 }
 
 #start-quiz {
@@ -271,7 +280,6 @@ h3 {
 }
 
 /* Results area styling */
-
 #score h3 {
     margin-top: 20px;
 }
@@ -362,4 +370,20 @@ footer {
 
 #footer-madeof i {
     font-size: 24px;
+}
+
+/* Media queries */
+
+/* Larger screens like computer monitors */
+@media screen and (max-width: 1200px) {
+
+}
+/* Medium screens like laptops and ipad */
+@media (min-width:600px) and (max-width: 1200px) {
+    
+}
+
+/* Smaller screens like smartphones */
+@media (min-width: 300px) and (max-width: 599px) {
+    
 }

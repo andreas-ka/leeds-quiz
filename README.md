@@ -31,11 +31,14 @@ I went with Leeds Uniteds colors, made a small change in the blue color and made
 
         
 #### Imagery
-Leeds United logo from their own website.
+Leeds United logo from their own website also serves as a link to index.html
 Did some photo modifications on Photopea to get a darker shade of blue.
+The background is from freepik.com
+https://www.freepik.com/free-vector/modern-wavy-shapes-abstract-curvy-stylish-background_8866250.htm#page=2&query=blue%20yellow%20background&position=40&from_view=keyword&track=ais
 
    
 ## Features
+The header contains Leeds Uniteds logo that also serves as a link back to the landing page.
 Footer with included links to Leeds social media sites, and also who made the website and link to his Github repository.
 An interactive quiz with 4 different answers to each question but only one correct.
 Time limit of 15 seconds on every question to make it more interesting.
@@ -56,21 +59,19 @@ To the bottom left is the question counter that shows witch question you are at.
 To the bottom right it show how many correct answer you have.
 When any option button is pressed the “Next Question” button appears.
 
+## Code setup
+A one page layout with all HTML code inside index.html
+All styling is done in style.css
+script.js contains all functions for the website and questions.js contains all questions
+to keep the code more readable.
 
-
- 
-## __Technologies Used__
-
-### ***Languages Used***
+## Languages Used
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-
-### ***Frameworks, Libraries & Programs Used***
-
 
 
 ## __Testing__
@@ -112,7 +113,7 @@ Codeinstitute mentor Sean for helping me sortout an issue with addEventListener.
 
 Codeinstitute mentor Sarah helped me out with classList and how i should do to make it work.
 
-Codeinstitute mentor Helped out with the timer.
+Codeinstitute mentor Martin helped out with the timer.
 
 Got help developing the timer function from this post on stackoverflow https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz
 
