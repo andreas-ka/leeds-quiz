@@ -117,11 +117,10 @@ html {
 .answer-btn:hover {
     border: 3px solid #f2d607;
 }
-    /*background-color: #f2d607;
-}*/
 
 .answer-btn span {
     font-size: 18px;
+    pointer-events: none;
 }
 
 .correct {

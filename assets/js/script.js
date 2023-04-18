@@ -39,17 +39,15 @@ nextQuestionBtn.onclick = ()=> {
 }
 // restart quiz button at the end of the quiz
 restartQuizBtn.onclick = ()=> {
-    resetState()
     welcomeRulesArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
     questionArea.style.display = 'block';
     showQuestions(0);
-    questionCounter(questionNumber);
-    showScore()
+    
 }
 
 // Takes you to the result page and displays your score
-function showResult(){
+function showResult() {
     welcomeRulesArea.style.display = 'none';
     resultScoreArea.style.display = 'block';
     questionArea.style.display = 'none';
@@ -73,6 +71,10 @@ function questionCounter(){
 
 // removes the previous buttons and answer when new question is loading
 function resetState() {
+    questionCounter(1);
+    showScore(0)
+    let questionNumber = 1;
+    let userScore = 0;
     while(answerBtnArea.firstChild) {
         answerBtnArea.removeChild(answerBtnArea.firstChild)
         nextQuestionBtn.style.display = "none";
