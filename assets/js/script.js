@@ -53,6 +53,7 @@ restartQuizBtn.onclick = ()=> {
 }
 
 
+// Sets the timer to 15 seconds on each question
 let counter;
 let seconds;
 let elapsedTime = 0;
@@ -66,6 +67,15 @@ function startTimer(time) {
         if (seconds < 0) {
             clearInterval(counter);
             document.getElementById('timer').innerHTML = "Time is out";
+            let correctAnswer = [quiz[questionNumber].answer];
+            const allOptions = answerBtnArea.children.length;
+            for(i=0; i < allOptions; i++){
+                if(answerBtnArea.children[i].textContent == correctAnswer){
+                    answerBtnArea.children[i].classList.add("correct")
+                answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
+            }
+            nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after time is out.
+        }
         }
     }
 }
