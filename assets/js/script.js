@@ -14,6 +14,8 @@ const restartQuizBtn = document.getElementById("restart-quiz-btn")
 
 let questionNumber = 1;
 let userScore = 0;
+let seconds = 15;
+var time = setInterval(quizTimer, 1000);
 
 
 // start button action
@@ -24,6 +26,7 @@ startQuizBtn.onclick = ()=> {
     showQuestions(0);
     questionCounter(questionNumber);
     showScore()
+    quizTimer()
 }
 
 // Next question button
@@ -33,6 +36,7 @@ nextQuestionBtn.onclick = ()=> {
         showQuestions(questionNumber)
         questionCounter(questionNumber)
         showScore()
+        quizTimer()
     }else{
         showResult()
     }
@@ -59,6 +63,7 @@ function showResult() {
     scoreTotal.innerHTML = scoreTotalTag;
 }
 
+// Shows the score in the bottom right corner
 function showScore(){
     let scoreNum = document.getElementById("correct-answers-counter")
     scoreTag = '<span>' + userScore + '</span>';
@@ -81,7 +86,18 @@ function resetState() {
         nextQuestionBtn.style.display = "none";
     }
 }
+// function to set a timer for the questions
+function quizTimer(time) {
+    document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs";
+    seconds--;
+    if (seconds == -1) {
+        clearInterval(time);
+        document.getElementById('timer').innerHTML = "Time is out";
+        
+    }
+}
 
+// the function to show the questions
 function showQuestions(index){
     resetState()       
     //creating a new span and div tag for question and option and passing the value using array index
@@ -96,6 +112,7 @@ function showQuestions(index){
     setEventListeners();
 }
 
+// Set the eventlistener for the buttons and checks the answer
 function setEventListeners() {
     [...optionBtn].forEach(option => { // converty nodelist to an array and loop over each option in array
         option.addEventListener("click", event => { // add an click eventlistener to each option button and emits an event
@@ -109,9 +126,11 @@ function setEventListeners() {
                 console.log('correct answer')
                 userScore ++;
                 event.target.classList.add("correct") // sets the class correct to the right answer and it shows green
+                clearInterval(time)
             }else{
                 console.log('incorrect')
                 event.target.classList.add("incorrect") // sets the class incorrect to the wrong answer
+                clearInterval(time)
             }
             for(i=0; i < allOptions; i++){
                 answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
