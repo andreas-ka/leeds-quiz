@@ -42,6 +42,9 @@ restartQuizBtn.onclick = ()=> {
     welcomeRulesArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
     questionArea.style.display = 'block';
+    userScore = 0;
+    questionNumber = 1;
+    questionCounter(questionNumber)
     showQuestions(0);
     
 }
@@ -73,8 +76,6 @@ function questionCounter(){
 function resetState() {
     questionCounter(1);
     showScore(0)
-    let questionNumber = 1;
-    let userScore = 0;
     while(answerBtnArea.firstChild) {
         answerBtnArea.removeChild(answerBtnArea.firstChild)
         nextQuestionBtn.style.display = "none";
