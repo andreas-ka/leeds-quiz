@@ -20,14 +20,11 @@ Target people who shares the love for football and Leeds United.
 
 
 
-### ***Design***
+### 
     
 #### Colour Palette
 ![title](/assets/images/color-palette.png)
-    #f2d607 yellow
-    #172b49 dark blue
-    #ffffff white
-
+I went with Leeds Uniteds colors, made a small change in the blue color and made it more navy so i got a better contrast.
        
 
 #### Typography
@@ -44,10 +41,8 @@ An interactive quiz with 4 different answers to each question but only one corre
 Time limit of 15 seconds on every question to make it more interesting.
 One page layout keeps it clean and tidy, only the box in the middle is changing between welcome and rules, the actual quiz, and a result page.
 
-
 #### Welcome page
 Here you will be greeted with a welcome and the rules of the quiz, just under the rules is the “Start Quiz” button.
-
 
 #### Footer
 Consist of fontawesome icons for all Leeds United social media links and is static on the website.
@@ -117,7 +112,15 @@ Codeinstitute mentor Sean for helping me sortout an issue with addEventListener.
 
 Codeinstitute mentor Sarah helped me out with classList and how i should do to make it work.
 
+Codeinstitute mentor Helped out with the timer.
 
-Box shadow
-https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow
+Got help developing the timer function from this post on stackoverflow https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz
+
+And also a huge thanks to my family for letting me do this.
+
+This helped me out with a bug on click events on answer buttons https://stackoverflow.com/questions/68127861/how-can-i-make-a-span-element-cover-a-button-completely
+
+Helped me get started with timer function https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz
+
+Box shadow https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow
 
