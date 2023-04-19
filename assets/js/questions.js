@@ -68,14 +68,14 @@ const quiz = [
   },
   {
         numb: 7,
-        question: "What answer is a nickname for Leeds United?",
-        answers: "Peacocks",
-        options: [
-            "Cockatoos",
-            "Doves",
-            "Peacocks",
-            "Marchies"
-          ]
+        question: "What is a nickname for Leeds United?",
+        answer: "The Peacocks",
+        options: [  
+            "The Marchies",
+            "The Peacocks",
+            "The Cockatoos",
+            "The Doves"
+      ]
   },
   {
         numb: 8,

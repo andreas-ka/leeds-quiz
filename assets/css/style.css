@@ -264,7 +264,7 @@ html {
 #rules-area {
     height: 300px;
     font-size: 20px;
-    padding-top: 30px;  
+    padding-top: 10px;  
 }
 
 #start-quiz {
@@ -272,6 +272,7 @@ html {
     margin: 10px auto;
     height: 25px;
     justify-content: center;
+    padding-top: 20px;
 }
 
 h3 {

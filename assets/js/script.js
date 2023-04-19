@@ -51,12 +51,12 @@ restartQuizBtn.onclick = ()=> {
     startTimer(15)
 }
 
-
 // Sets the timer to 15 seconds on each question
 let counter;
 let seconds;
 let elapsedTime = 0;
 
+// The function that starts the timer on every question, also if no snwer is picked it displays the correct answer
 function startTimer(time) {
     seconds = time - elapsedTime;
     counter = setInterval(timer, 1000);
@@ -85,7 +85,7 @@ function showResult() {
     resultScoreArea.style.display = 'block';
     questionArea.style.display = 'none';
     let scoreTotal = document.getElementById("score-div");
-    let scoreTotalTag = '<span>' + userScore + '</span>';
+    let scoreTotalTag = '<span>' + userScore + ' out of 20' + '</span>';
     scoreTotal.innerHTML = scoreTotalTag;
 }
 
@@ -124,11 +124,11 @@ function showQuestions(index) {
     + '<button class="answer-btn"><span>'+ quiz[index].options[3] +'</span></button>';
     questionText.innerHTML = que_tag; //adding new span tag inside question-class
     answerBtnArea.innerHTML = option_tag; // adding new span with option in answer buttons
-    setEventListeners();
+    getAnswer();
 }
 
 // Set the eventlistener for the buttons and checks the answer
-function setEventListeners() {
+function getAnswer() {
     [...optionBtn].forEach(option => { // converty nodelist to an array and loop over each option in array
         option.addEventListener("click", event => { // add an click eventlistener to each option button and emits an event
             const span = event.currentTarget.querySelector('span'); // Targets the span
@@ -154,4 +154,5 @@ function setEventListeners() {
         })
     })
 }
+
 
