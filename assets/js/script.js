@@ -6,9 +6,8 @@ const startQuizBtn = document.getElementById("start-quiz-btn");
 const nextQuestionBtn = document.getElementById("next-question-btn");
 const questionText = document.querySelector(".questions-class");
 const answerBtnArea = document.getElementById("answer-btn-area");
-const optionBtn = document.getElementsByClassName("answer-btn")
-const questionsTotal = document.getElementById("questions-left-counter");
-const restartQuizBtn = document.getElementById("restart-quiz-btn")
+const optionBtn = document.getElementsByClassName("answer-btn");
+const restartQuizBtn = document.getElementById("restart-quiz-btn");
 
 // variables that change during the quiz
 let questionNumber = 1;
@@ -22,23 +21,24 @@ startQuizBtn.onclick = ()=> {
     questionArea.style.display = 'block';
     showQuestions(0);
     questionCounter(questionNumber);
-    showScore()
-    startTimer(15)
-    
-}
+    showScore();
+    startTimer(15);    
+};
+
 // Next question button
 nextQuestionBtn.onclick = ()=> {
      questionNumber++;   
     if(questionNumber < quiz.length){ //if question count is less than total question length
-        showQuestions(questionNumber)
-        questionCounter(questionNumber)
-        showScore()
+        showQuestions(questionNumber);
+        questionCounter(questionNumber);
+        showScore();
         clearInterval(counter);
-        startTimer(15)
+        startTimer(15);
     }else{
-        showResult()
+        showResult();
     }
-}
+};
+
 // restart quiz button at the end of the quiz
 restartQuizBtn.onclick = ()=> {
     welcomeRulesArea.style.display = 'none';
@@ -48,8 +48,8 @@ restartQuizBtn.onclick = ()=> {
     questionNumber = 1;
     questionCounter(questionNumber);
     showQuestions(0);
-    startTimer(15)
-}
+    startTimer(15);
+};
 
 // Sets the timer to 15 seconds on each question
 let counter;
@@ -70,8 +70,8 @@ function startTimer(time) {
             const allOptions = answerBtnArea.children.length;
             for(i=0; i < allOptions; i++){
                 if(answerBtnArea.children[i].textContent == correctAnswer){
-                    answerBtnArea.children[i].classList.add("correct")
-                answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
+                    answerBtnArea.children[i].classList.add("correct");
+                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
             }
             nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after time is out.
         }
@@ -91,7 +91,7 @@ function showResult() {
 
 // Shows the score in the bottom right corner
 function showScore(){
-    let scoreNum = document.getElementById("correct-answers-counter")
+    let scoreNum = document.getElementById("correct-answers-counter");
     scoreTag = '<span>' + userScore + '</span>';
     scoreNum.innerHTML = scoreTag;
 }
@@ -106,15 +106,15 @@ function questionCounter(){
 // removes the previous buttons and answer when new question is loading
 function resetState() {
     questionCounter(1);
-    showScore(0)
+    showScore(0);
     while(answerBtnArea.firstChild) {
-        answerBtnArea.removeChild(answerBtnArea.firstChild)
+        answerBtnArea.removeChild(answerBtnArea.firstChild);
         nextQuestionBtn.style.display = "none";
     }
 }
 // the function to show the questions
 function showQuestions(index) {
-    resetState()       
+    resetState();       
     //creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ quiz[index].numb + ". " + quiz[index].question +'</span>';
     let option_tag = 
@@ -138,27 +138,27 @@ function getAnswer() {
             let correctAnswer = [quiz[questionNumber].answer];
             console.log(correctAnswer);
             if(text == correctAnswer) {
-                console.log('correct answer')
+                console.log('correct answer');
                 userScore ++;
                 event.target.classList.add("correct"); // sets the class correct to the right answer and it shows green
-                clearInterval(counter)
+                clearInterval(counter);
             }else{
-                console.log('incorrect')
+                console.log('incorrect');
                 event.target.classList.add("incorrect"); // sets the class incorrect to the wrong answer and shows it in red
                 for(i=0; i < allOptions; i++){
                     if(answerBtnArea.children[i].textContent == correctAnswer){// displays the correct answer if user picked incorrect
-                    answerBtnArea.children[i].classList.add("correct")
+                    answerBtnArea.children[i].classList.add("correct");
                     answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
                 }
             }
-                    clearInterval(counter)
+                    clearInterval(counter);
             }
                     for(i=0; i < allOptions; i++){
                     answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
             }
             nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after answer made.
-        })
-    })
+        });
+    });
 }
 
 
