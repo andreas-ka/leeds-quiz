@@ -13,7 +13,6 @@ const restartQuizBtn = document.getElementById("restart-quiz-btn");
 let questionNumber = 0;
 let userScore = 0;
 
-
 // start button action
 startQuizBtn.onclick = ()=> {
     welcomeRulesArea.style.display = 'none';
@@ -104,7 +103,7 @@ function questionCounter(){
     queLeft.innerHTML = queLeftTag;
 }
 
-// removes the previous buttons and answer when new question is loading
+// removes the previous buttons and answer when new question is loading, learned that from Easy Tutorials on youtube, link in credit
 function resetState() {
     questionCounter(1);
     showScore(0);

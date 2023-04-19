@@ -29,7 +29,8 @@ Make an easy and clean design that fits well on both a large screen and on mobil
 ### Future projects ###    
 
 Wanted the questions to be random every time you start the quiz.  
-Add a leaderboard.   
+Add a leaderboard.
+Would have been cool to have a counter to see how many times the quiz has been completed.     
 
 ----
 
@@ -130,7 +131,33 @@ to keep the code more readable.
 ----
 
 
-### Testing ###
+### Testing and Responsive Testing ###
+----
+Used Grammarly on all texts on website, my native language isn't english so i needed the help.
+
+Tested on these mobiledevices:   
+iphone 11 mini, iphone 14 Pro Max.    
+
+Tablets:  
+Ipad
+
+Bigger screens:
+Macbook 14", Macbook 13", 37" wide monitor, 32" monitor.
+
+Got help testing the website in the group TotalLeeds on facebook with over 20 000 members.
+
+Used chrome devtools to test responsive and help me set the correct settings in the css file.
+
+All links have been tested and also opens in new tabs.
+
+----
+
+### Fixed Bugs ###
+----
+- Had lots of bugs with the timer, it didn't stop when you clicked an answer, and it didn't reset when you clicked the next question.   
+Have to thank Martin from the code institute for helping me solve it with a new improved code for the timer.   
+
+- One last obstacle was that the quiz didnt read the first question correct, gave the right question but looked at the wrong answer. Took some time using console.log and talking to the tutor Josh to figue out that it was the questionNumber that had to be changed.
 ----
 
 ### HTML, CSS and JavaScript Validator ###
@@ -154,16 +181,13 @@ JavaScript validator JSHint.
 ![title](/assets/images/lighthouse-mobile.png)  
 
 ----
- 
 
-### Responsive Testing ###
+### Deployment ###
 ----
-
-
-### Fixed Bugs ###
-----
-- Had lots of bugs with the timer, it didn't stop when you clicked an answer, and it didn't reset when you clicked the next question.   
-Have to thank Martin from the code institute for helping me solve it with a new improved code for the timer.   
+Website is made with CodeAnywhere and then git commit and git push to my repository on GitHub.  
+There you can click on your repository in mind and press settings.   
+Next step is that on your left you have a navigation menu where you can click on Pages the last step is to deploy your website.  
+![title](/assets/images/readme-deploy-image.png)  
 
 ----
 
@@ -186,5 +210,10 @@ Another post on [stackoverflow](https://stackoverflow.com/questions/44314897/jav
 
 How to apply box shadow on [w3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow)
 
-Watched these videos on youtube before project to get inspiration [Easy Tutorials,](https://www.youtube.com/watch?v=fz8bwvn9lA4) [Code Now,](https://www.youtube.com/watch?v=3fbU4z7fPe4&t=3465s) and another on from [Code Now](https://www.youtube.com/watch?v=A9vLoDBm9Lc)
+Watched these videos on youtube before project to get inspiration [Easy Tutorials,](https://www.youtube.com/watch?v=fz8bwvn9lA4) [Code Now,](https://www.youtube.com/watch?v=3fbU4z7fPe4&t=3465s) and another on from [Code Now](https://www.youtube.com/watch?v=A9vLoDBm9Lc).  
 
+This [post](https://stackoverflow.com/questions/55166737/how-to-display-indicate-the-right-and-wrong-answers-at-the-end-of-javascript-qui) helped me with the classList setting to change class depending on correct or incorrect answer.  
+
+Leeds United's [Wikipedia](https://en.wikipedia.org/wiki/Leeds_United_F.C.) to get all the questions for the quiz.  
+
+This [website](https://www.codewithrandom.com/2022/08/10/quiz-app-with-timer-javascript/) was also helpful understanding the layout and functions in a quiz
