@@ -1,13 +1,13 @@
 # Leeds United Quiz #
 
-This is a quiz for both people who wanna learn fun facts about Leeds United but also for fans of the club to test their knowledge.
+This is a quiz for both people who want to learn fun facts about Leeds United and also for club fans to test their knowledge.
 Link to finished website: [Leeds Quiz](https://andreas-ka.github.io/leeds-quiz/)   
 
 ----
 
 ### Finished site ##
 ----
-Image from Am i Responsive.   
+Image from Am I Responsive.   
 ![title](/assets/images/am-i-responsive-image.png)     
 
 ----
@@ -24,8 +24,8 @@ Image from Am i Responsive.
 
 Create a responsive website √.  
 Make a fun quiz with a good variation in difficulty √.  
-Make it easy in the future to add more features on the site.√.  
-Make a easy and clean design that fits well on both a large screen and on mobile devices. √.  
+Make it easy in the future to add more features to the site.√.  
+Make an easy and clean design that fits well on both a large screen and on mobile devices.  
 ### Future projects ###    
 
 Wanted the questions to be random every time you start the quiz.  
@@ -34,28 +34,29 @@ Add a leaderboard.
 ----
 
 ### Audience ###
-Target people who shares the love for football and Leeds United. 
+Target people who share a love for football and Leeds United. 
 
 ----
     
 ### Colour Palette ###
 ----
-I went with Leeds Uniteds colors, made a small change in the blue color and made it more navy so i got a better contrast.   
+I went with Leeds United colors, made a small change in the blue color, and made it more navy so I got a better contrast.   
 ![title](/assets/images/color-palette.png)  
 
 ----
        
 ### Typography ###
 ----
-Sans-serif used on whole site.  
+Sans-serif is used on the whole site.  
 
 ----
         
 ### Imagery ###
 ----
-Leeds United logo from their own website also serves as a link to index.html.   
+The Leeds United logo from their website also serves as a link to index.html.   
 Did some photo modifications on Photopea to get a darker shade of blue.   
 The background is from [freepik.com](https://www.freepik.com/free-vector/modern-wavy-shapes-abstract-curvy-stylish-background_8866250.htm#page=2&query=blue%20yellow%20background&position=40&from_view=keyword&track=ais.) and captures Leeds colors pretty well and gives the site a more playful feeling.   
+Main background for desktops and tablets, on mobile theres a smaller version adapted for smartphones.
 ![title](/assets/images/readme-background-image.png)  
 
 ----
@@ -65,14 +66,14 @@ The background is from [freepik.com](https://www.freepik.com/free-vector/modern-
 The header contains Leeds Uniteds logo that also serves as a link back to the landing page.   
 Footer with included links to Leeds social media sites, and also who made the website and link to his Github repository.   
 An interactive quiz with 4 different answers to each question but only one correct.   
-Time limit of 15 seconds on every question to make it more interesting.   
+A time limit of 15 seconds for every question to make it more interesting.   
 One page layout keeps it clean and tidy, only the box in the middle is changing between welcome and rules, the actual quiz, and a result page.    
 
 ----
 
 ### Header ### 
 ----
-Clean and simple header, no navigation bar, all actions and interactions on website is in the center.  
+Clean and simple header, no navigation bar, and all actions and interactions on the website are in the center.  
 ![title](/assets/images/readme-header.png)   
 
 ----
@@ -86,12 +87,12 @@ Here you will be greeted with a welcome and the rules of the quiz, just under th
 
 ### Quiz area ###
 ----
-At the top is 1 of 20 questions displayed big and easy readable.   
+At the top is 1 of 20 questions displayed big and easily readable.   
 Below the question is the timer that starts as soon you have loaded the question, you have 15 seconds to answer each question.   
-When you have made your choice the answer will either turn green or red depending of the result,    
-and when you have made your choice the other options are blocked so you cant change your answer.   
-To the bottom left is the question counter that shows witch question you are at.   
-To the bottom right it show how many correct answer you have.   
+When you have made your choice the answer will either turn green or red depending on the result    
+and when you have made your choice the other options are blocked so you can't change your answer.   
+To the bottom left is the question counter that shows which question you are at.   
+To the bottom right it shows how many correct answers you have.   
 When any option button is pressed the “Next Question” button appears.   
 ![title](/assets/images/readme-quiz-area.png)
 
@@ -105,14 +106,14 @@ Consist of fontawesome icon with a thumbs up and a good job text, easy simple de
 ### Footer ###
 ----
 Consist of fontawesome icons for all Leeds United social media links and is static on the website.   
-Also included in the footer is who made the website and link to his Github repository.   
+Also included in the footer is who made the website and the link to his GitHub repository.   
 ![title](/assets/images/readme-footer.png)  
 
 ----
 
 ### Code setup ###
 ----
-A one page layout with all HTML code inside index.html.   
+A one-page layout with all HTML code inside index.html.   
 All styling is done in style.css.  
 script.js contains all functions for the website and questions.js contains all questions
 to keep the code more readable.   
@@ -161,17 +162,17 @@ JavaScript validator JSHint.
 
 ### Fixed Bugs ###
 ----
-- Had lots of bugs with the timer, it didnt stop when you clicked a answer, it didnt reset when you clicked next question.   
-Have to thank Martin from codeinstitute for helping me solve it with a new improved code for the timer.   
+- Had lots of bugs with the timer, it didn't stop when you clicked an answer, and it didn't reset when you clicked the next question.   
+Have to thank Martin from the code institute for helping me solve it with a new improved code for the timer.   
 
 ----
 
 ### Credits ###
 ----
 
-Codeinstitute mentor Sean for helping me sortout an issue with addEventListener.
+Codeinstitute mentor Sean for helping me sort out an issue with addEventListener.
 
-Codeinstitute mentor Sarah helped me out with classList and how i should do to make it work.
+Codeinstitute mentor Sarah helped me out with classList and what I should do to make it work.
 
 Codeinstitute mentor Martin helped out with the timer.
 

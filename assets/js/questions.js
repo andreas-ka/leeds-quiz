@@ -1,4 +1,4 @@
-/* Creating an Array containing all the questions and answers in boolean format */
+/* Creating an Array containing all the questions and answers in the boolean format */
 const quiz = [
     {   
         numb: 1,
@@ -13,7 +13,7 @@ const quiz = [
   },
   {
         numb: 2,
-        question: "Who is the all time leading goalscorer for Leeds United?",
+        question: "Who is the all-time leading goalscorer for Leeds United?",
         answer: "Peter Lorimer",
         options: [
             "Peter Lorimer", 
@@ -35,7 +35,7 @@ const quiz = [
   },
   {
         numb: 4,
-        question: "During the 19/20 season Leeds won the Championship but what was our total points?",
+        question: "During the 19/20 season Leeds won the Championship but what were our total points?",
         answer: "93",
         options: [
             "93", 
@@ -71,7 +71,7 @@ const quiz = [
         question: "What is a nickname for Leeds United?",
         answer: "The Peacocks",
         options: [  
-            "The Marchies",
+            "The Marchers",
             "The Peacocks",
             "The Cockatoos",
             "The Doves"
@@ -112,7 +112,7 @@ const quiz = [
   },
   {
         numb: 11,
-        question: "What team did we lose to in 2000/2001 Champions League semi-final?",
+        question: "What team did we lose to in the 2000/2001 Champions League semi-final?",
         answer: "Valencia",
         options: [
             "Lazio",
@@ -134,7 +134,7 @@ const quiz = [
   },
   {
         numb: 13,
-        question: "How many Leeds players have been inducted into the English football Hall of fame?",
+        question: "How many Leeds players have been inducted into the English Football Hall of Fame?",
         answer: "11",
         options: [
             "11",
@@ -145,7 +145,7 @@ const quiz = [
   },
   {
         numb: 14,
-        question: "During the 1960s what team inspired Revie to change our colours?",
+        question: "During the 1960s what team inspired Revie to change our colors?",
         answer: "Real Madrid",
         options: [
             "Juventus",
@@ -156,7 +156,7 @@ const quiz = [
   },
   {
         numb: 15,
-        question: "What team did we beat in the FA Cup final 1972?",
+        question: "What team did we beat in the FA Cup final in 1972?",
         answer: "Arsenal",
         options: [
             "Tottenham",
@@ -200,7 +200,7 @@ const quiz = [
   },
   {
         numb: 19,
-        question: "In 2022 The Old Peacock pub changed its name temporarily to what?",
+        question: "In 2022 The Old Peacock Pub changed its name temporarily to what?",
         answer: "The Bielsa",
         options: [
             "The Dallas",
@@ -211,7 +211,7 @@ const quiz = [
   },
   {
         numb: 20,
-        question: "Which shirt manufacturer did we have before Adidas took over 2020?",
+        question: "Which shirt manufacturer did we have before Adidas took over in 2020?",
         answer: "Kappa",
         options: [
             "Diadora",
