@@ -116,6 +116,7 @@ function resetState() {
 function showQuestions(index) {
     resetState();       
     //creating a new span and div tag for question and option and passing the value using array index
+    //Learned and used the same method as a video from youtube, links i readme
     let que_tag = '<span>'+ quiz[index].numb + ". " + quiz[index].question +'</span>';
     let option_tag = 
     '<button class="answer-btn"><span>'+ quiz[index].options[0] +'</span></button>'
@@ -128,6 +129,7 @@ function showQuestions(index) {
 }
 
 // Set the eventlistener for the buttons and checks if the answer is correct or incorrect.
+// Learned this from a tutor session
 function getAnswer() {
     [...optionBtn].forEach(option => { // converty nodelist to an array and loop over each option in array
         option.addEventListener("click", event => { // add an click eventlistener to each option button and emits an event
