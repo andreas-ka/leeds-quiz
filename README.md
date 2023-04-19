@@ -24,8 +24,8 @@ Image from Am I Responsive.
 
 - Create a responsive website √.  
 - Make a fun quiz with a good variation in difficulty √.  
-- Make it easy in the future to add more features to the site.√.  
-- Make an easy and clean design that fits well on both a large screen and on mobile devices.  
+- Make it easy in the future to add more features to the site √.  
+- Make an easy and clean design that fits well on both a large screen and on mobile devices √.    
 ### Future projects ###    
 
 - Wanted the questions to be random every time you start the quiz.  
