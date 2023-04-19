@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-
-
-
 * {
  margin: 0;
  padding: 0;
@@ -137,7 +134,7 @@ html {
     font-size: 18px;
     pointer-events: none;
 }
-
+/* The classes thats been used if answer i correct or incorrect */
 .correct {
     background-color: green;
 }
@@ -149,7 +146,6 @@ html {
 .disabled {
     pointer-events: none;
 }
-
 
 #next-question {
     width: 180px;
@@ -213,7 +209,6 @@ html {
 }
 
 /* Welcome and rules styling */
-
 h3 {
     text-align: center;
     color: white;
@@ -404,7 +399,6 @@ html {
 }  
 
 /* Logo styling */    
-
 #logo-text {
     width: 300px;
     height: 150px;
@@ -425,7 +419,6 @@ html {
 }
 
 /* Welcome and rules styling */
-
 #welcome-rules-area {
     width: 300px;
     height: 600px;
@@ -465,8 +458,8 @@ h3 {
     text-align: center;
     padding-top: 30px;
 }
-/* Results area styling */
 
+/* Results area styling */
 #score h3 {
     margin-top: 20px;
 }
@@ -487,7 +480,6 @@ h3 {
 }
 
 /* Game area styling */
-
 #quiz-area {
     width: 300px;
     height: 600px;

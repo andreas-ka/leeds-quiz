@@ -61,15 +61,15 @@ function startTimer(time) {
     seconds = time - elapsedTime;
     counter = setInterval(timer, 1000);
     function timer() {
-        document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs";
+        document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs"; // displays the text and seconds for the timer
         seconds--;
         if (seconds < 0) {
             clearInterval(counter);
-            document.getElementById('timer').innerHTML = "Time is out";
+            document.getElementById('timer').innerHTML = "Time is out"; // Shows if the timer reaches 0
             let correctAnswer = [quiz[questionNumber].answer];
             const allOptions = answerBtnArea.children.length;
             for(i=0; i < allOptions; i++){
-                if(answerBtnArea.children[i].textContent == correctAnswer){
+                if(answerBtnArea.children[i].textContent == correctAnswer){// shows the correct answer if timer runs out
                     answerBtnArea.children[i].classList.add("correct");
                     answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
             }
@@ -85,7 +85,7 @@ function showResult() {
     resultScoreArea.style.display = 'block';
     questionArea.style.display = 'none';
     let scoreTotal = document.getElementById("score-div");
-    let scoreTotalTag = '<span>' + userScore + ' out of 20' + '</span>';
+    let scoreTotalTag = '<span>' + userScore + ' out of 20' + '</span>';// displays the final result of the quiz
     scoreTotal.innerHTML = scoreTotalTag;
 }
 

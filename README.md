@@ -1,6 +1,6 @@
 # Leeds United Quiz #
 
-This is a quiz for both people who want to learn fun facts about Leeds United and also for club fans to test their knowledge.
+This is a interactive quiz for both people who want to learn fun facts about Leeds United and also for club fans to test their knowledge. It will take both knowledge and abit of luck to beat all questions. Enjoy and Good Luck!   
 Link to finished website: [Leeds Quiz](https://andreas-ka.github.io/leeds-quiz/)   
 
 ----
@@ -22,15 +22,15 @@ Image from Am I Responsive.
 ----
 ### Achieved ###
 
-Create a responsive website √.  
-Make a fun quiz with a good variation in difficulty √.  
-Make it easy in the future to add more features to the site.√.  
-Make an easy and clean design that fits well on both a large screen and on mobile devices.  
+- Create a responsive website √.  
+- Make a fun quiz with a good variation in difficulty √.  
+- Make it easy in the future to add more features to the site.√.  
+- Make an easy and clean design that fits well on both a large screen and on mobile devices.  
 ### Future projects ###    
 
-Wanted the questions to be random every time you start the quiz.  
-Add a leaderboard.
-Would have been cool to have a counter to see how many times the quiz has been completed.     
+- Wanted the questions to be random every time you start the quiz.  
+- Add a leaderboard.
+- Would have been cool to have a counter to see how many times the quiz has been completed.     
 
 ----
 
@@ -54,60 +54,61 @@ Sans-serif is used on the whole site.
         
 ### Imagery ###
 ----
-The Leeds United logo from their website also serves as a link to index.html.   
-Did some photo modifications on Photopea to get a darker shade of blue.   
-The background is from [freepik.com](https://www.freepik.com/free-vector/modern-wavy-shapes-abstract-curvy-stylish-background_8866250.htm#page=2&query=blue%20yellow%20background&position=40&from_view=keyword&track=ais.) and captures Leeds colors pretty well and gives the site a more playful feeling.   
+- The Leeds United logo from their website also serves as a link to index.html.   
+- Did some photo modifications on Photopea to get a darker shade of blue.   
+- The background is from [freepik.com](https://www.freepik.com/free-vector/modern-wavy-shapes-abstract-curvy-stylish-background_8866250.htm#page=2&query=blue%20yellow%20background&position=40&from_view=keyword&track=ais.) and captures Leeds colors pretty well and gives the site a more playful feeling.   
 Main background for desktops and tablets, on mobile theres a smaller version adapted for smartphones.
 ![title](/assets/images/readme-background-image.png)  
+![title](/assets/images/readme-background-image-mobile.png)  
 
 ----
    
 ### Features ###
 ----
-The header contains Leeds Uniteds logo that also serves as a link back to the landing page.   
-Footer with included links to Leeds social media sites, and also who made the website and link to his Github repository.   
-An interactive quiz with 4 different answers to each question but only one correct.   
-A time limit of 15 seconds for every question to make it more interesting.   
-One page layout keeps it clean and tidy, only the box in the middle is changing between welcome and rules, the actual quiz, and a result page.    
+- The header contains Leeds Uniteds logo that also serves as a link back to the landing page.   
+- Footer with included links to Leeds social media sites, and also who made the website and link to his Github repository.   
+- An interactive quiz with 4 different answers to each question but only one correct.   
+- A time limit of 15 seconds for every question to make it more interesting.   
+- One page layout keeps it clean and tidy, only the box in the middle is changing between welcome and rules, the actual quiz, and a result page.    
 
 ----
 
 ### Header ### 
 ----
-Clean and simple header, no navigation bar, and all actions and interactions on the website are in the center.  
+- Clean and simple header, no navigation bar, and all actions and interactions on the website are in the center.  
 ![title](/assets/images/readme-header.png)   
 
 ----
 
 ### Welcome page ###
 ----
-Here you will be greeted with a welcome and the rules of the quiz, just under the rules is the “Start Quiz” button.   
+- Here you will be greeted with a welcome and the rules of the quiz, just under the rules is the “Start Quiz” button.   
 ![title](/assets/images/readme-welcome-area.png)   
 
 ----
 
 ### Quiz area ###
 ----
-At the top is 1 of 20 questions displayed big and easily readable.   
-Below the question is the timer that starts as soon you have loaded the question, you have 15 seconds to answer each question.   
-When you have made your choice the answer will either turn green or red depending on the result    
+- At the top is 1 of 20 questions displayed big and easily readable.   
+- Below the question is the timer that starts as soon you have loaded the question, you have 15 seconds to answer each question.   
+- When you have made your choice the answer will either turn green or red depending on the result    
 and when you have made your choice the other options are blocked so you can't change your answer.   
-To the bottom left is the question counter that shows which question you are at.   
-To the bottom right it shows how many correct answers you have.   
-When any option button is pressed the “Next Question” button appears.   
+- To the bottom left is the question counter that shows which question you are at.   
+- To the bottom right it shows how many correct answers you have.   
+- When any option button is pressed the “Next Question” button appears.   
 ![title](/assets/images/readme-quiz-area.png)
 
 ### Result Page ###
 ----
-Consist of fontawesome icon with a thumbs up and a good job text, easy simple design with the option to restart the quiz.   
+- Consist of fontawesome icon with a thumbs up and a good job text, easy simple design with the option to restart the quiz.   
 ![title](/assets/images/readme-result-area.png)  
 
 ----
 
 ### Footer ###
 ----
-Consist of fontawesome icons for all Leeds United social media links and is static on the website.   
-Also included in the footer is who made the website and the link to his GitHub repository.   
+- Consist of fontawesome icons for all Leeds United social media links and is static on the website.   
+- Also included in the footer is who made the website and the link to his GitHub repository.   
 ![title](/assets/images/readme-footer.png)  
 
 ----
@@ -133,22 +134,22 @@ to keep the code more readable.
 
 ### Testing and Responsive Testing ###
 ----
-Used Grammarly on all texts on website, my native language isn't english so i needed the help.
+- Used Grammarly on all texts on website, my native language isn't english so i needed the help.
 
-Tested on these mobiledevices:   
-iphone 11 mini, iphone 14 Pro Max.    
+- Tested on these mobiledevices:   
+iphone 11 mini, iphone 14 Pro Max, Sony Xperia 10, Samsung S22   
 
-Tablets:  
+- Tablets:  
 Ipad
 
-Bigger screens:
+- Bigger screens:
 Macbook 14", Macbook 13", 37" wide monitor, 32" monitor.
 
-Got help testing the website in the group TotalLeeds on facebook with over 20 000 members.
+- Got help testing the website in the group TotalLeeds on facebook with over 20 000 members.
 
-Used chrome devtools to test responsive and help me set the correct settings in the css file.
+- Used chrome devtools to test responsive and help me set the correct settings in the css file.
 
-All links have been tested and also opens in new tabs.
+- All links have been tested and also opens in new tabs.
 
 ----
 
@@ -158,15 +159,17 @@ All links have been tested and also opens in new tabs.
 Have to thank Martin from the code institute for helping me solve it with a new improved code for the timer.   
 
 - One last obstacle was that the quiz didnt read the first question correct, gave the right question but looked at the wrong answer. Took some time using console.log and talking to the tutor Josh to figue out that it was the questionNumber that had to be changed.
+
+- Had a bug where you could still click an answer after you already selected yours, solved with classList disabled.
 ----
 
 ### HTML, CSS and JavaScript Validator ###
 ----
-HTML Validator.  
+- HTML Validator.  
 ![title](/assets/images/readme-html-validator.png)  
-CSS Validator.   
+- CSS Validator.   
 ![title](/assets/images/readme-css-validator.png)   
-JavaScript validator JSHint.   
+- JavaScript validator JSHint.   
 ![title](/assets/images/readme-jshint.png)  
 
 ----
@@ -184,9 +187,9 @@ JavaScript validator JSHint.
 
 ### Deployment ###
 ----
-Website is made with CodeAnywhere and then git commit and git push to my repository on GitHub.  
-There you can click on your repository in mind and press settings.   
-Next step is that on your left you have a navigation menu where you can click on Pages the last step is to deploy your website.  
+- Website is made with CodeAnywhere and then git commit and git push to my repository on GitHub.  
+- There you can click on your repository in mind and press settings.   
+- Next step is that on your left you have a navigation menu where you can click on Pages the last step is to deploy your website.  
 ![title](/assets/images/readme-deploy-image.png)  
 
 ----
@@ -194,26 +197,30 @@ Next step is that on your left you have a navigation menu where you can click on
 ### Credits ###
 ----
 
-Codeinstitute mentor Sean for helping me sort out an issue with addEventListener.
+- Codeinstitute tutor Sean for helping me sort out an issue with addEventListener.
 
-Codeinstitute mentor Sarah helped me out with classList and what I should do to make it work.
+- Codeinstitute tutor Sarah helped me out with classList and what I should do to make it work.
 
-Codeinstitute mentor Martin helped out with the timer.
+- Codeinstitute tutor Martin helped out with the timer.
 
-Link to [stackoverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and helpful tips for a quiz timer.   
+- Link to [stackoverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and helpful tips for a quiz timer.   
 
-And also a huge thanks to my family for letting me do this.  
+- And also a huge thanks to my family for letting me do this.  
 
-This [stackoverflow](https://stackoverflow.com/questions/68127861/how-can-i-make-a-span-element-cover-a-button-completely) post helped me out with a bug on click events on answer buttons 
+- This [stackoverflow](https://stackoverflow.com/questions/68127861/how-can-i-make-a-span-element-cover-a-button-completely) post helped me out with a bug on click events on answer buttons. 
 
-Another post on [stackoverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) that helped me get started with timer function 
+- Another post on [stackoverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) that helped me get started with timer function. 
 
-How to apply box shadow on [w3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow)
+- How to apply box shadow on [w3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow)
 
-Watched these videos on youtube before project to get inspiration [Easy Tutorials,](https://www.youtube.com/watch?v=fz8bwvn9lA4) [Code Now,](https://www.youtube.com/watch?v=3fbU4z7fPe4&t=3465s) and another on from [Code Now](https://www.youtube.com/watch?v=A9vLoDBm9Lc).  
+- Watched these videos on youtube before project to get inspiration [Easy Tutorials,](https://www.youtube.com/watch?v=fz8bwvn9lA4) [Code Now,](https://www.youtube.com/watch?v=3fbU4z7fPe4&t=3465s) and another on from [Code Now](https://www.youtube.com/watch?v=A9vLoDBm9Lc).  
 
-This [post](https://stackoverflow.com/questions/55166737/how-to-display-indicate-the-right-and-wrong-answers-at-the-end-of-javascript-qui) helped me with the classList setting to change class depending on correct or incorrect answer.  
+- This [post](https://stackoverflow.com/questions/55166737/how-to-display-indicate-the-right-and-wrong-answers-at-the-end-of-javascript-qui) helped me with the classList setting to change class depending on correct or incorrect answer.  
 
-Leeds United's [Wikipedia](https://en.wikipedia.org/wiki/Leeds_United_F.C.) to get all the questions for the quiz.  
+- Leeds United's [Wikipedia](https://en.wikipedia.org/wiki/Leeds_United_F.C.) to get all the questions for the quiz.  
 
-This [website](https://www.codewithrandom.com/2022/08/10/quiz-app-with-timer-javascript/) was also helpful understanding the layout and functions in a quiz
+- This [website](https://www.codewithrandom.com/2022/08/10/quiz-app-with-timer-javascript/) was also helpful understanding the layout and functions in a quiz.
+
+- Link to [geeksforgeeks][https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/] where i learned display:none and how to apply it on my site.
+
+- Also a link to [geeksforgeeks][https://www.geeksforgeeks.org/javascript-cleartimeout-clearinterval-method/] that shows the clearInterval function.
