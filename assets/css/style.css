@@ -399,6 +399,10 @@ footer {
 /* Smaller screens like smartphones */
 @media (min-width: 300px) and (max-width: 500px) {
 
+html {  
+    background: url("../images/background-image-mobile.webp") no-repeat center center fixed; 
+}  
+
 /* Logo styling */    
 
 #logo-text {
