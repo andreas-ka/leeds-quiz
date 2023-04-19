@@ -3,6 +3,7 @@
 This is a quiz for both people who wanna learn fun facts about Leeds United but also for fans of the club to test their knowledge.
 Link to finished website: https://andreas-ka.github.io/leeds/index.html
 
+## Finished site ##
 
 ## Mock up ##
 
