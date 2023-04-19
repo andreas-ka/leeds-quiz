@@ -8,7 +8,7 @@ Link to finished website: [Leeds Quiz](https://andreas-ka.github.io/leeds-quiz/)
 ### Finished site ##
 ----
 Image from Am i Responsive.   
-![title](/assets/images/am-i-responsive-image.png).  
+![title](/assets/images/am-i-responsive-image.png)     
 
 ----
 
@@ -46,6 +46,9 @@ I went with Leeds Uniteds colors, made a small change in the blue color and made
 ----
        
 ### Typography ###
+----
+Sans-serif used on whole site.  
+
 ----
         
 ### Imagery ###

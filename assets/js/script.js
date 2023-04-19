@@ -10,7 +10,7 @@ const optionBtn = document.getElementsByClassName("answer-btn");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
 
 // variables that change during the quiz
-let questionNumber = 1;
+let questionNumber = 0;
 let userScore = 0;
 
 
@@ -35,6 +35,7 @@ nextQuestionBtn.onclick = ()=> {
         clearInterval(counter);
         startTimer(15);
     }else{
+        questionNumber = 0;
         showResult();
     }
 };
@@ -45,8 +46,8 @@ restartQuizBtn.onclick = ()=> {
     resultScoreArea.style.display = 'none';
     questionArea.style.display = 'block';
     userScore = 0;
-    questionNumber = 1;
     questionCounter(questionNumber);
+    questionCounter(0);
     showQuestions(0);
     startTimer(15);
 };
@@ -99,7 +100,7 @@ function showScore(){
 // Counts the questions and displays them in bottom left corner
 function questionCounter(){
     let queLeft = document.getElementById("questions-left-counter");
-    queLeftTag = '<span>' + questionNumber +'</span>';
+    let queLeftTag = '<span>' + quiz[questionNumber].numb +'</span>';
     queLeft.innerHTML = queLeftTag;
 }
 
