@@ -127,7 +127,7 @@ function showQuestions(index) {
     getAnswer();
 }
 
-// Set the eventlistener for the buttons and checks the answer
+// Set the eventlistener for the buttons and checks if the answer is correct or incorrect.
 function getAnswer() {
     [...optionBtn].forEach(option => { // converty nodelist to an array and loop over each option in array
         option.addEventListener("click", event => { // add an click eventlistener to each option button and emits an event
@@ -144,11 +144,17 @@ function getAnswer() {
                 clearInterval(counter)
             }else{
                 console.log('incorrect')
-                event.target.classList.add("incorrect"); // sets the class incorrect to the wrong answer
-                clearInterval(counter)
+                event.target.classList.add("incorrect"); // sets the class incorrect to the wrong answer and shows it in red
+                for(i=0; i < allOptions; i++){
+                    if(answerBtnArea.children[i].textContent == correctAnswer){// displays the correct answer if user picked incorrect
+                    answerBtnArea.children[i].classList.add("correct")
+                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
+                }
             }
-            for(i=0; i < allOptions; i++){
-                answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
+                    clearInterval(counter)
+            }
+                    for(i=0; i < allOptions; i++){
+                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
             }
             nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after answer made.
         })
