@@ -167,7 +167,7 @@ const quiz = [
   },
   {
         numb: 16,
-        question: "How many goals did Patrick Bamford score during the 20/21 season back in the Premier League?",
+        question: "How many goals did Bamford score during the 20/21 Premier League season?",
         answer: "17",
         options: [
         "18",
