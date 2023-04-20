@@ -14,7 +14,7 @@ let questionNumber = 0;
 let userScore = 0;
 
 // start button action
-startQuizBtn.onclick = ()=> {
+function startBtnQuiz() {
     welcomeRulesArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
     questionArea.style.display = 'block';
@@ -25,7 +25,7 @@ startQuizBtn.onclick = ()=> {
 };
 
 // Next question button, if question count is less than total question length then showResult
-nextQuestionBtn.onclick = ()=> {
+function nextQueBtn() {
      questionNumber++;   
     if(questionNumber < quiz.length){ 
         showQuestions(questionNumber);
@@ -40,7 +40,7 @@ nextQuestionBtn.onclick = ()=> {
 };
 
 // restart quiz button at the end of the quiz
-restartQuizBtn.onclick = ()=> {
+function restartQuizButton() {
     welcomeRulesArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
     questionArea.style.display = 'block';

@@ -167,6 +167,8 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 - One last obstacle was that the quiz didnt read the first question correct, gave the right question but looked at the wrong answer. Took some time using console.log and talking to the tutor Josh to figue out that it was the questionNumber that had to be changed.
 
 - Had a bug where you could still click an answer after you already selected yours, solved with classList disabled.
+
+- Everytime the page loaded is showed an error regarding favicon 404, solved it by finding a post on stackoverflow, link in credit section.
 ----
 
 ### HTML, CSS and JavaScript Validator ###
@@ -227,6 +229,8 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 
 - This [website](https://www.codewithrandom.com/2022/08/10/quiz-app-with-timer-javascript/) was also helpful understanding the layout and functions in a quiz.
 
-- Link to [geeksforgeeks][https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/] where i learned display:none and how to apply it on my site.
+- Link to [geeksforgeeks](https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/) where i learned display:none and how to apply it on my site.
 
-- Also a link to [geeksforgeeks][https://www.geeksforgeeks.org/javascript-cleartimeout-clearinterval-method/] that shows the clearInterval function.
+- Also a link to [geeksforgeeks](https://www.geeksforgeeks.org/javascript-cleartimeout-clearinterval-method/) that shows the clearInterval function.
+
+- Link to [stackoverflow](https://stackoverflow.com/questions/31075893/how-to-fix-favicon-ico-error-failed-to-load-resource-neterr-empty-response) that helps and explain what the favicon 404 error is and how to solve it.

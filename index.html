@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A quiz about Leeds United Football Club" />
-    <meta name="keywords" content="Leeds United, Football, Quiz" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="A quiz about Leeds United Football Club"/>
+    <meta name="keywords" content="Leeds United, Football, Quiz"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="shortcut icon" href="#"/> <!-- This removes the error that shows on page load regarding favicon, read credit in readme -->
     <title>Leeds United Quiz</title>
 </head>
 
@@ -38,7 +39,7 @@
                 <button type="button" class="answer-button"></button>
             </div><!-- Next question button -->
             <div id="next-question">
-                <button type="button" id="next-question-btn" class="start-next-btn">
+                <button type="button" onclick="nextQueBtn()" id="next-question-btn" class="start-next-btn">
                     Next question
                 </button>
             </div><!-- Displays the number of the current question and the score -->
@@ -89,7 +90,7 @@
                 </ul>
             </div><!-- Start quiz button -->
             <div id="start-quiz">
-                <button type="button" id="start-quiz-btn" class="start-next-btn">
+                <button type="button" onclick="startBtnQuiz()" id="start-quiz-btn" class="start-next-btn">
                     Start Quiz
                 </button>
             </div>
@@ -107,7 +108,7 @@
             <div id="score-div">0</div>
             <h3>Try again? Press button below.</h3>
             <div id="restart-quiz">
-                <button type="button" id="restart-quiz-btn" class="restart-quiz-btn">
+                <button type="button" onclick="restartQuizButton()" id="restart-quiz-btn" class="restart-quiz-btn">
                     Restart Quiz
                 </button>
             </div>
