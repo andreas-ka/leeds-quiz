@@ -63,8 +63,9 @@ Sans-serif is used on the whole site.
 - The Leeds United logo from their website also serves as a link to index.html.   
 - Did some photo modifications on Photopea to get a darker shade of blue.   
 - The background is from [freepik.com](https://www.freepik.com/free-vector/modern-wavy-shapes-abstract-curvy-stylish-background_8866250.htm#page=2&query=blue%20yellow%20background&position=40&from_view=keyword&track=ais.) and captures Leeds colors pretty well and gives the site a more playful feeling.   
-Main background for desktops and tablets, on mobile theres a smaller version adapted for smartphones.
+Main background for desktops and tablets.  
 ![title](/assets/images/readme-background-image.png)  
+On mobile theres a smaller version adapted for smartphones.   
 ![title](/assets/images/readme-background-image-mobile.png)  
 
 ----
@@ -211,6 +212,8 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 
 - Codeinstitute tutor Martin helped out with the timer.
 
+- My mentor Nikki showed me this [post](https://www.w3schools.com/tags/ev_onclick.asp) so i could change the onclick to functions in script.js
+
 - Link to [stackoverflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and helpful tips for a quiz timer.   
 
 - And also a huge thanks to my family for letting me do this.  
@@ -234,3 +237,5 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 - Also a link to [geeksforgeeks](https://www.geeksforgeeks.org/javascript-cleartimeout-clearinterval-method/) that shows the clearInterval function.
 
 - Link to [stackoverflow](https://stackoverflow.com/questions/31075893/how-to-fix-favicon-ico-error-failed-to-load-resource-neterr-empty-response) that helps and explain what the favicon 404 error is and how to solve it.
+
+- This [link](https://css-tricks.com/the-fixed-background-attachment-hack/) learned me about background images and how to set the properly.

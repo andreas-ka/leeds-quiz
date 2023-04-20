@@ -57,7 +57,7 @@ let seconds;
 let elapsedTime = 0;
 
 /**
- * The startTimer() function that starts the timer on every question, also if no snwer is picked it displays the correct answer
+ * The startTimer() function that starts the timer on every question, also if no answer is picked it displays the correct answer
  * displays the text and seconds for the timer
  * shows the correct answer if timer runs out
  * disabled the buttons once the time is out.
@@ -152,14 +152,11 @@ function getAnswer() {
             const allOptions = answerBtnArea.children.length;
             console.log(text);
             let correctAnswer = [quiz[questionNumber].answer];
-            console.log(correctAnswer);
             if(text == correctAnswer) {
-                console.log('correct answer');
                 userScore ++;
                 event.target.classList.add("correct"); 
                 clearInterval(counter);
             }else{
-                console.log('incorrect');
                 event.target.classList.add("incorrect"); 
                 for(i=0; i < allOptions; i++){
                     if(answerBtnArea.children[i].textContent == correctAnswer){
