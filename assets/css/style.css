@@ -14,7 +14,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
 /* header styling and image styling */
 #logo-text {
@@ -25,7 +25,7 @@ html {
     justify-content: center;
     margin: auto;
     flex-direction: row;
-  }
+}
 .logo-text {
     width: 166px;
     height: 50px;
@@ -47,14 +47,14 @@ html {
     background-color: #f2d607;
     outline: solid 2px #172b49;
     transition: 0.3s;
- }
+}
 
  .restart-quiz-btn:hover {
     color:  #172b49;
     background-color: #f2d607;
     outline: solid 2px #172b49;
     transition: 0.3s;
- }
+}
 
 /* Game area styling */
 #quiz-area {
@@ -381,15 +381,6 @@ footer {
 }
 
 /* Media queries */
-
-/* Larger screens like computer monitors */
-@media screen and (max-width: 1200px) {
-
-}
-/* Medium screens like laptops and ipad */
-@media (min-width:600px) and (max-width: 1200px) {
-    
-}
 
 /* Smaller screens like smartphones */
 @media (min-width: 300px) and (max-width: 500px) {

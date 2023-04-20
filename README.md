@@ -17,6 +17,12 @@ Image from Am I Responsive.
 ![title](/assets/images/mockup-quiz.png)  
 
 ----
+### Flow Chart ##
+----
+Made with Lucid Charts. A fairly simple chart that i used during developing.  
+![title](/assets/images/flowchart-leeds.png)  
+
+----
 
 ### Project goals and target audience ###
 ----
