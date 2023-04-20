@@ -175,7 +175,7 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 ![title](/assets/images/readme-html-validator.png)  
 - CSS Validator.   
 ![title](/assets/images/readme-css-validator.png)   
-- JavaScript validator JSHint.   
+- JavaScript validator JSHint. Ignored es6 error, mentor said it was fine.   
 ![title](/assets/images/readme-jshint.png)  
 
 ----

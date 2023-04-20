@@ -24,10 +24,10 @@ startQuizBtn.onclick = ()=> {
     startTimer(15);    
 };
 
-// Next question button
+// Next question button, if question count is less than total question length then showResult
 nextQuestionBtn.onclick = ()=> {
      questionNumber++;   
-    if(questionNumber < quiz.length){ //if question count is less than total question length
+    if(questionNumber < quiz.length){ 
         showQuestions(questionNumber);
         questionCounter(questionNumber);
         showScore();
@@ -56,24 +56,30 @@ let counter;
 let seconds;
 let elapsedTime = 0;
 
-// The function that starts the timer on every question, also if no snwer is picked it displays the correct answer
+/**
+ * The startTimer() function that starts the timer on every question, also if no snwer is picked it displays the correct answer
+ * displays the text and seconds for the timer
+ * shows the correct answer if timer runs out
+ * disabled the buttons once the time is out.
+ * Shows the Next Question button again after time is out.
+ */
 function startTimer(time) {
     seconds = time - elapsedTime;
     counter = setInterval(timer, 1000);
     function timer() {
-        document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs"; // displays the text and seconds for the timer
+        document.getElementById('timer').innerHTML = "Timer: " + seconds + " secs"; 
         seconds--;
         if (seconds < 0) {
             clearInterval(counter);
-            document.getElementById('timer').innerHTML = "Time is out"; // Shows if the timer reaches 0
+            document.getElementById('timer').innerHTML = "Time is out"; 
             let correctAnswer = [quiz[questionNumber].answer];
             const allOptions = answerBtnArea.children.length;
             for(i=0; i < allOptions; i++){
-                if(answerBtnArea.children[i].textContent == correctAnswer){// shows the correct answer if timer runs out
+                if(answerBtnArea.children[i].textContent == correctAnswer){
                     answerBtnArea.children[i].classList.add("correct");
-                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
+                    answerBtnArea.children[i].classList.add("disabled"); 
             }
-            nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after time is out.
+            nextQuestionBtn.style.display = "block";
         }
         }
     }
@@ -112,11 +118,13 @@ function resetState() {
         nextQuestionBtn.style.display = "none";
     }
 }
-// the function to show the questions
+/** 
+ * showQuestions() function to show the questions
+ * creating a new span and div tag for question and option and passing the value using array index
+ * Learned and used the same method as a video from youtube, links i readme
+*/
 function showQuestions(index) {
     resetState();       
-    //creating a new span and div tag for question and option and passing the value using array index
-    //Learned and used the same method as a video from youtube, links i readme
     let que_tag = '<span>'+ quiz[index].numb + ". " + quiz[index].question +'</span>';
     let option_tag = 
     '<button class="answer-btn"><span>'+ quiz[index].options[0] +'</span></button>'
@@ -128,13 +136,19 @@ function showQuestions(index) {
     getAnswer();
 }
 
-// Set the eventlistener for the buttons and checks if the answer is correct or incorrect.
-// Learned this from a tutor session
+/** 
+ * getAnswer() sets the eventlistener for the buttons and checks if the answer is correct or incorrect. Learned this from a tutor session
+ * converting nodelist to an array and loop over each option in array
+ * add an click eventlistener to each option button and emits an event
+ * Display a correct classList to correct answers and incorrect classList to incorrect answers, also displays correct answer if picked incorrect
+ * disables buttons when you clicked a answer
+ * Shows the Next Question button again after answer made.
+*/
 function getAnswer() {
-    [...optionBtn].forEach(option => { // converty nodelist to an array and loop over each option in array
-        option.addEventListener("click", event => { // add an click eventlistener to each option button and emits an event
-            const span = event.currentTarget.querySelector('span'); // Targets the span
-            const text = span.innerText; // gets the innertext to know what was clicked
+    [...optionBtn].forEach(option => { 
+        option.addEventListener("click", event => { 
+            const span = event.currentTarget.querySelector('span');
+            const text = span.innerText; 
             const allOptions = answerBtnArea.children.length;
             console.log(text);
             let correctAnswer = [quiz[questionNumber].answer];
@@ -142,23 +156,23 @@ function getAnswer() {
             if(text == correctAnswer) {
                 console.log('correct answer');
                 userScore ++;
-                event.target.classList.add("correct"); // sets the class correct to the right answer and it shows green
+                event.target.classList.add("correct"); 
                 clearInterval(counter);
             }else{
                 console.log('incorrect');
-                event.target.classList.add("incorrect"); // sets the class incorrect to the wrong answer and shows it in red
+                event.target.classList.add("incorrect"); 
                 for(i=0; i < allOptions; i++){
-                    if(answerBtnArea.children[i].textContent == correctAnswer){// displays the correct answer if user picked incorrect
+                    if(answerBtnArea.children[i].textContent == correctAnswer){
                     answerBtnArea.children[i].classList.add("correct");
-                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once the time is out.
+                    answerBtnArea.children[i].classList.add("disabled");
                 }
             }
-                    clearInterval(counter);
+                clearInterval(counter);
             }
-                    for(i=0; i < allOptions; i++){
-                    answerBtnArea.children[i].classList.add("disabled"); // disabled the buttons once user has made a choice.
+                for(i=0; i < allOptions; i++){
+                answerBtnArea.children[i].classList.add("disabled");
             }
-            nextQuestionBtn.style.display = "block"; // Shows the Next Question button again after answer made.
+            nextQuestionBtn.style.display = "block"; 
         });
     });
 }
