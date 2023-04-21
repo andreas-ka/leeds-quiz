@@ -1,38 +1,41 @@
 # Leeds United Quiz #
+<style>H1{color:#F2D608;}</style>
+<style>H2{color:#F2D608;}</style>
 
 This is a interactive quiz for both people who want to learn fun facts about Leeds United and also for club fans to test their knowledge. It will take both knowledge and abit of luck to beat all questions. Enjoy and Good Luck!   
 Link to finished website: [Leeds Quiz](https://andreas-ka.github.io/leeds-quiz/)   
 
 ----
 
-### Finished site ##
+## Finished site ##
 ----
-Image from Am I Responsive.   
+Image from Am I Responsive that shows the website on different devices.     
 ![title](/assets/images/am-i-responsive-image.png)     
 
 ----
 
-### Mock up ##
+## Mock up ##
 ----
 ![title](/assets/images/mockup-quiz.png)  
 
 ----
-### Flow Chart ##
+## Flow Chart ##
 ----
 Made with Lucid Charts. A fairly simple chart that i used during developing.  
 ![title](/assets/images/flowchart-leeds.png)  
 
 ----
 
-### Project goals and target audience ###
+## Project goals and target audience ##
 ----
-### Achieved ###
+## Achieved ##
 
 - Create a responsive website √.  
 - Make a fun quiz with a good variation in difficulty √.  
 - Make it easy in the future to add more features to the site √.  
-- Make an easy and clean design that fits well on both a large screen and on mobile devices √.    
-### Future projects ###    
+- Make an easy and clean design that fits well on both a large screen and on mobile devices √.  
+
+## Future projects ###   
 
 - Wanted the questions to be random every time you start the quiz.  
 - Add a leaderboard.
@@ -40,25 +43,25 @@ Made with Lucid Charts. A fairly simple chart that i used during developing.
 
 ----
 
-### Audience ###
-Target people who share a love for football and Leeds United. 
+## Audience ##
+Target people who share a love for football and Leeds United Football Club. 
 
 ----
     
-### Colour Palette ###
+## Colour Palette ##
 ----
 I went with Leeds United colors, made a small change in the blue color, and made it more navy so I got a better contrast.   
 ![title](/assets/images/color-palette.png)  
 
 ----
        
-### Typography ###
+## Typography ##
 ----
 Sans-serif is used on the whole site.  
 
 ----
         
-### Imagery ###
+## Imagery ##
 ----
 - The Leeds United logo from their website also serves as a link to index.html.   
 - Did some photo modifications on Photopea to get a darker shade of blue.   
@@ -70,7 +73,7 @@ On mobile theres a smaller version adapted for smartphones.
 
 ----
    
-### Features ###
+## Features ##
 ----
 - The header contains Leeds Uniteds logo that also serves as a link back to the landing page.   
 - Footer with included links to Leeds social media sites, and also who made the website and link to his Github repository.   
@@ -80,21 +83,21 @@ On mobile theres a smaller version adapted for smartphones.
 
 ----
 
-### Header ### 
+## Header ## 
 ----
-- Clean and simple header, no navigation bar, and all actions and interactions on the website are in the center.  
+- Clean and simple header, no navigation bar, the logo is clickable and returns you to the landing page,the reso of the actions and interactions on the website are in the center.  
 ![title](/assets/images/readme-header.png)   
 
 ----
 
-### Welcome page ###
+## Welcome page ##
 ----
 - Here you will be greeted with a welcome and the rules of the quiz, just under the rules is the “Start Quiz” button.   
 ![title](/assets/images/readme-welcome-area.png)   
 
 ----
 
-### Quiz area ###
+## Quiz area ##
 ----
 - At the top is 1 of 20 questions displayed big and easily readable.   
 - Below the question is the timer that starts as soon you have loaded the question, you have 15 seconds to answer each question.   
@@ -105,14 +108,14 @@ and when you have made your choice the other options are blocked so you can't ch
 - When any option button is pressed the “Next Question” button appears.   
 ![title](/assets/images/readme-quiz-area.png)
 
-### Result Page ###
+## Result Page ##
 ----
 - Consist of fontawesome icon with a thumbs up and a good job text, easy simple design with the option to restart the quiz.   
 ![title](/assets/images/readme-result-area.png)  
 
 ----
 
-### Footer ###
+## Footer ##
 ----
 - Consist of fontawesome icons for all Leeds United social media links and is static on the website.   
 - Also included in the footer is who made the website and the link to his GitHub repository.   
@@ -120,16 +123,16 @@ and when you have made your choice the other options are blocked so you can't ch
 
 ----
 
-### Code setup ###
+## Code setup ##
 ----
-A one-page layout with all HTML code inside index.html.   
-All styling is done in style.css.  
-script.js contains all functions for the website and questions.js contains all questions
+- A one-page layout with all HTML code inside index.html.   
+- All styling on the website is done in style.css.  
+- script.js contains all functions for the website and questions.js contains all questions
 to keep the code more readable.   
 
 ----
 
-### Languages Used ###
+## Languages Used ##
 ----
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
@@ -139,12 +142,12 @@ to keep the code more readable.
 ----
 
 
-### Testing and Responsive Testing ###
+## Testing and Responsive Testing ##
 ----
 - Used Grammarly on all texts on website, my native language isn't english so i needed the help.
 
 - Tested on these mobiledevices:   
-iphone 11 mini, iphone 14 Pro Max, Sony Xperia 10, Samsung S22   
+iphone 11 mini, iphone 14 Pro Max, Sony Xperia 10, Samsung S22, iphone 12.     
 
 - Tablets:  
 Ipad
@@ -154,13 +157,13 @@ Macbook 14", Macbook 13", 37" wide monitor, 32" monitor.
 
 - Got help testing the website in the group TotalLeeds on facebook with over 20 000 members.
 
-- Used chrome devtools to test responsive and help me set the correct settings in the css file.
+- Used chrome devtools and firefox to test responsive and help me set the correct settings in the css file.
 
-- All links have been tested and also opens in new tabs.
+- All links have been tested on both bigger screens and mobileso it opens in new tabs.
 
 ----
 
-### Fixed Bugs ###
+## Fixed Bugs ##
 ----
 - Had lots of bugs with the timer, it didn't stop when you clicked an answer, and it didn't reset when you clicked the next question.   
 Have to thank Martin from the code institute for helping me solve it with a new improved code for the timer.   
@@ -170,9 +173,11 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 - Had a bug where you could still click an answer after you already selected yours, solved with classList disabled.
 
 - Everytime the page loaded is showed an error regarding favicon 404, solved it by finding a post on stackoverflow, link in credit section.
+
+- Had problem with the background on mobile, added a specific background image just for mobile to solve it.
 ----
 
-### HTML, CSS and JavaScript Validator ###
+## HTML, CSS and JavaScript Validator ##
 ----
 - HTML Validator.  
 ![title](/assets/images/readme-html-validator.png)  
@@ -183,7 +188,7 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 
 ----
 
-### Performance, Accessibility, Best Practices, and SEO Testing ###
+## Performance, Accessibility, Best Practices, and SEO Testing ##
 ----
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
@@ -194,7 +199,7 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 
 ----
 
-### Deployment ###
+## Deployment ##
 ----
 - Website is made with CodeAnywhere and then git commit and git push to my repository on GitHub.  
 - There you can click on your repository in mind and press settings.   
@@ -203,7 +208,7 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 
 ----
 
-### Credits ###
+## Credits ##
 ----
 
 - Codeinstitute tutor Sean for helping me sort out an issue with addEventListener.
@@ -211,6 +216,8 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 - Codeinstitute tutor Sarah helped me out with classList and what I should do to make it work.
 
 - Codeinstitute tutor Martin helped out with the timer.
+
+- Codeinstitute tutor Josh pointed me in the direction to solve the issue i had with the first question not showing right answers.  
 
 - My mentor Nikki showed me this [post](https://www.w3schools.com/tags/ev_onclick.asp) so i could change the onclick to functions in script.js
 
@@ -238,4 +245,6 @@ Have to thank Martin from the code institute for helping me solve it with a new 
 
 - Link to [stackoverflow](https://stackoverflow.com/questions/31075893/how-to-fix-favicon-ico-error-failed-to-load-resource-neterr-empty-response) that helps and explain what the favicon 404 error is and how to solve it.
 
-- This [link](https://css-tricks.com/the-fixed-background-attachment-hack/) learned me about background images and how to set the properly.
+- This [link](https://css-tricks.com/the-fixed-background-attachment-hack/) learned me about background images and how to set the properly.   
+
+----
